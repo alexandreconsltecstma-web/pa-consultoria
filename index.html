@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PA Consultoria Ambiental | Arapiraca – AL</title>
+<meta name="description" content="Licenciamento ambiental, condicionantes, outorga, CTF/IBAMA e gestão ambiental para empresas em Alagoas. Atendimento em Arapiraca/AL.">
+<meta property="og:title" content="PA Consultoria Ambiental">
+<meta property="og:description" content="Regularização ambiental com segurança técnica para empresas em Alagoas.">
+<meta property="og:image" content="img/patricia.jpg">
+<meta name="theme-color" content="#1d3a17">
+<link rel="icon" href="img/icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --verde:#1d3a17; --verde2:#2c5424; --verde3:#3f6b2e; --ouro:#c9a24a; --creme:#f4f1e4; --texto:#33402c; --cinza:#6b6a5a; --branco:#fff; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body { font-family:Inter, Arial, sans-serif; color:var(--texto); background:var(--creme); line-height:1.6; font-size:17px; }
+img { max-width:100%; display:block; }
+a { color:inherit; }
+h1, h2, h3 { font-family:Merriweather, Cambria, Georgia, serif; color:var(--verde); line-height:1.2; }
+.wrap { max-width:1120px; margin:0 auto; padding:0 20px; }
+section { padding:80px 0; }
+.etiqueta { display:inline-block; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ouro); margin-bottom:10px; }
+h2 { font-size:clamp(28px, 4vw, 38px); margin-bottom:16px; }
+h2 + p.lead { font-size:18px; max-width:680px; margin-bottom:40px; }
+.btn { display:inline-flex; align-items:center; gap:10px; background:var(--ouro); color:var(--verde); text-decoration:none; font-weight:700;
+  padding:15px 26px; border-radius:999px; transition:transform .15s, box-shadow .15s; box-shadow:0 6px 18px rgba(0,0,0,.15); }
+.btn:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.2); }
+.btn.claro { background:transparent; color:var(--creme); border:2px solid rgba(244,241,228,.5); box-shadow:none; }
+.btn svg { width:22px; height:22px; flex:none; }
+
+/* topo */
+header { position:sticky; top:0; z-index:20; background:rgba(29,58,23,.97); backdrop-filter:blur(6px); }
+header .wrap { display:flex; align-items:center; justify-content:space-between; height:74px; gap:16px; }
+.marca { display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--creme); font-weight:700; font-size:17px; }
+.marca img { width:54px; height:46px; object-fit:contain; background:#fff; border-radius:10px; padding:3px; border:2px solid var(--ouro); }
+nav { display:flex; gap:26px; align-items:center; }
+nav a { color:var(--creme); text-decoration:none; font-size:15px; font-weight:500; opacity:.9; }
+nav a:hover { color:var(--ouro); }
+nav .btn { padding:10px 18px; font-size:14px; color:var(--verde); opacity:1; }
+.menu-btn { display:none; background:none; border:0; color:var(--creme); font-size:28px; cursor:pointer; }
+
+/* capa */
+.capa { background:linear-gradient(160deg, var(--verde) 0%, var(--verde2) 60%, var(--verde3) 100%); color:var(--creme); padding:70px 0 90px; overflow:hidden; }
+.capa .wrap { display:grid; grid-template-columns:1.2fr .8fr; gap:50px; align-items:center; }
+.capa h1 { color:#fff; font-size:clamp(34px, 5vw, 54px); margin-bottom:20px; }
+.capa h1 em { font-style:normal; color:var(--ouro); }
+.capa p { font-size:19px; max-width:560px; margin-bottom:32px; color:#efe6c8; }
+.capa .acoes { display:flex; gap:14px; flex-wrap:wrap; }
+.capa .selos { display:flex; gap:22px; flex-wrap:wrap; margin-top:38px; font-size:15px; font-weight:600; }
+.capa .selos span::before { content:"✓ "; color:var(--ouro); }
+.foto { position:relative; }
+.foto img { border-radius:24px; border:5px solid var(--ouro); aspect-ratio:4/5; object-fit:cover; object-position:50% 15%; width:100%; }
+.foto .nome { position:absolute; left:20px; right:20px; bottom:-26px; background:var(--creme); color:var(--verde); border:3px solid var(--ouro);
+  border-radius:16px; padding:12px 16px; box-shadow:0 10px 26px rgba(0,0,0,.25); }
+.foto .nome b { display:block; font-size:17px; }
+.foto .nome span { font-size:14px; color:var(--cinza); }
+
+/* sobre */
+.sobre .wrap { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+.sobre p { margin-bottom:16px; }
+.numero { display:flex; align-items:center; gap:20px; background:var(--verde); color:var(--creme); border-radius:20px; padding:26px 30px; margin-bottom:22px; }
+.numero b { font-family:Merriweather, serif; font-size:58px; color:var(--ouro); line-height:1; }
+.lista-check { list-style:none; display:grid; gap:12px; }
+.lista-check li { background:#fff; border-radius:14px; padding:14px 18px 14px 52px; position:relative; font-weight:600; color:var(--verde); box-shadow:0 3px 12px rgba(29,58,23,.06); }
+.lista-check li::before { content:"✓"; position:absolute; left:16px; top:13px; width:24px; height:24px; border-radius:50%; background:var(--verde); color:#fff;
+  font-size:13px; display:grid; place-items:center; }
+
+/* serviços */
+.servicos { background:#fff; }
+.grade { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+.card { background:var(--creme); border-radius:20px; padding:28px; border:1px solid #e6dcbc; transition:transform .15s, box-shadow .15s; }
+.card:hover { transform:translateY(-3px); box-shadow:0 12px 28px rgba(29,58,23,.1); }
+.card .ic { width:52px; height:52px; border-radius:14px; background:var(--verde); color:var(--ouro); display:grid; place-items:center; font-size:24px; margin-bottom:16px; }
+.card h3 { font-size:19px; margin-bottom:8px; }
+.card p { font-size:15.5px; }
+.nota { margin-top:30px; background:var(--verde); color:var(--creme); border-radius:20px; padding:26px 30px; font-size:17px; }
+.nota b { color:var(--ouro); }
+
+/* sinais */
+.sinais { background:var(--verde); color:var(--creme); }
+.sinais h2 { color:#fff; }
+.sinais .lead { color:#efe6c8; }
+.sinais .grade { grid-template-columns:repeat(5, 1fr); gap:16px; }
+.sinal { background:var(--verde2); border-radius:18px; padding:24px 20px; border:1px solid rgba(201,162,74,.3); }
+.sinal i { font-style:normal; display:grid; place-items:center; width:46px; height:46px; border-radius:50%; background:var(--ouro); color:var(--verde);
+  font-weight:800; font-size:20px; margin-bottom:14px; }
+.sinal h3 { color:#fff; font-size:17px; margin-bottom:6px; }
+.sinal p { font-size:14.5px; color:#dcd5bb; }
+.sinais .rodape { margin-top:34px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+
+/* passos */
+.passos .grade { grid-template-columns:repeat(4, 1fr); }
+.passo { position:relative; background:#fff; border-radius:20px; padding:30px 24px; box-shadow:0 4px 16px rgba(29,58,23,.06); }
+.passo b { display:block; font-family:Merriweather, serif; font-size:40px; color:var(--ouro); line-height:1; margin-bottom:12px; }
+.passo h3 { font-size:18px; margin-bottom:6px; }
+.passo p { font-size:15px; }
+
+/* contadores */
+.contadores { background:#fff; }
+.contadores .caixa { background:linear-gradient(135deg, var(--verde), var(--verde2)); color:var(--creme); border-radius:28px; padding:50px; display:grid;
+  grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; }
+.contadores h2 { color:#fff; }
+.contadores ul { list-style:none; display:grid; gap:10px; }
+.contadores li { padding-left:28px; position:relative; }
+.contadores li::before { content:"→"; position:absolute; left:0; color:var(--ouro); font-weight:700; }
+.contadores .chamada { background:rgba(255,255,255,.08); border:1px solid rgba(201,162,74,.5); border-radius:20px; padding:28px; text-align:center; }
+.contadores .chamada p { margin-bottom:18px; font-size:18px; }
+.contadores .chamada b { color:var(--ouro); }
+
+/* dúvidas */
+.duvidas details { background:#fff; border-radius:16px; margin-bottom:12px; box-shadow:0 3px 12px rgba(29,58,23,.05); }
+.duvidas summary { cursor:pointer; padding:20px 56px 20px 24px; font-weight:700; color:var(--verde); list-style:none; position:relative; font-size:17px; }
+.duvidas summary::-webkit-details-marker { display:none; }
+.duvidas summary::after { content:"+"; position:absolute; right:24px; top:50%; transform:translateY(-50%); font-size:26px; color:var(--ouro); }
+.duvidas details[open] summary::after { content:"–"; }
+.duvidas details p { padding:0 24px 22px; }
+.fonte { font-size:13px; color:var(--cinza); }
+
+/* contato */
+.contato { background:var(--verde); color:var(--creme); }
+.contato h2 { color:#fff; }
+.contato .wrap > .cols { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:stretch; }
+.contato .info { display:grid; gap:16px; align-content:start; }
+.item { display:flex; gap:16px; align-items:flex-start; background:var(--verde2); border-radius:16px; padding:20px; }
+.item .ic { flex:none; width:46px; height:46px; border-radius:12px; background:var(--ouro); color:var(--verde); display:grid; place-items:center; font-size:22px; }
+.item b { display:block; color:#fff; }
+.item a { color:var(--ouro); font-weight:700; text-decoration:none; }
+.mapa { border-radius:20px; overflow:hidden; border:4px solid var(--ouro); min-height:340px; background:var(--verde2); }
+.mapa iframe { width:100%; height:100%; min-height:340px; border:0; display:block; }
+
+footer { background:#142910; color:#bfb796; padding:28px 0; font-size:14px; }
+footer .wrap { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+
+.zap { position:fixed; right:20px; bottom:20px; z-index:30; width:62px; height:62px; border-radius:50%; background:#25d366; display:grid; place-items:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.3); transition:transform .15s; }
+.zap:hover { transform:scale(1.08); }
+.zap svg { width:34px; height:34px; fill:#fff; }
+
+@media (max-width: 960px) {
+  .sinais .grade { grid-template-columns:repeat(2, 1fr); }
+  .passos .grade, .grade { grid-template-columns:repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  section { padding:56px 0; }
+  nav { display:none; position:absolute; top:74px; left:0; right:0; background:var(--verde); flex-direction:column; padding:20px; gap:18px; }
+  nav.aberto { display:flex; }
+  .menu-btn { display:block; }
+  .capa .wrap, .sobre .wrap, .contadores .caixa, .contato .wrap > .cols { grid-template-columns:1fr; }
+  .capa { padding:44px 0 70px; }
+  .foto { max-width:340px; margin:0 auto; }
+  .grade, .passos .grade, .sinais .grade { grid-template-columns:1fr; }
+  .contadores .caixa { padding:30px 22px; }
+  .marca span { font-size:15px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="marca" href="#inicio"><img src="img/logo.png" alt="Logo da PA Consultoria Ambiental"><span>PA Consultoria Ambiental</span></a>
+    <button class="menu-btn" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('aberto')">☰</button>
+    <nav onclick="if(event.target.tagName==='A')this.classList.remove('aberto')">
+      <a href="#sobre">Quem somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <a class="btn zaplink" href="#">Fale no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="capa" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="etiqueta">Arapiraca · Alagoas</span>
+      <h1>Regularização ambiental com <em>segurança técnica</em> para a sua empresa</h1>
+      <p>Licenciamento, renovação de licenças, condicionantes, outorga de água e CTF/IBAMA. Apoio a empresas e escritórios de contabilidade em todo o estado.</p>
+      <div class="acoes">
+        <a class="btn zaplink" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>Falar no WhatsApp</a>
+        <a class="btn claro" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="selos"><span>Meio ambiente</span><span>Segurança do trabalho</span><span>Atendimento em Alagoas</span></div>
+    </div>
+    <div class="foto">
+      <img src="img/patricia.jpg" alt="Patricia Bezerra Albuquerque, responsável técnica da PA Consultoria Ambiental" width="640" height="960">
+      <div class="nome"><b>Patricia Bezerra Albuquerque</b><span>Eng. Sanitária e Ambiental · Responsável técnica</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <div>
+      <span class="etiqueta">Quem somos</span>
+      <h2>Prazer, sou Patricia Bezerra Albuquerque</h2>
+      <p>A <b>PA Consultoria Ambiental e de Segurança do Trabalho</b> ajuda empresas e empreendimentos a se regularizarem nas esferas municipal, estadual e federal.</p>
+      <p>Ao longo da minha trajetória, adquiri experiência nos setores público, privado e educacional. Já analisei processos dentro do poder público, atuo na linha de frente da consultoria privada e levo a prática real da legislação para a sala de aula.</p>
+      <p>Com a PA, ofereço apoio a escritórios de contabilidade e empreendimentos em Alagoas, sempre começando pela compreensão da atividade e da necessidade de cada cliente.</p>
+    </div>
+    <div>
+      <div class="numero"><b>22</b><span>anos de formação e experiência nos setores público, privado e educacional.</span></div>
+      <ul class="lista-check">
+        <li>Engenheira Sanitária e Ambiental</li>
+        <li>Pós-graduada em Engenharia de Segurança do Trabalho</li>
+        <li>Instrutora dos cursos técnicos de Meio Ambiente e Segurança do Trabalho no SENAC Agreste</li>
+        <li>Proprietária da PA Consultoria Ambiental</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="servicos" id="servicos">
+  <div class="wrap">
+    <span class="etiqueta">Serviços</span>
+    <h2>Como podemos ajudar a sua empresa</h2>
+    <p class="lead">Do primeiro pedido de licença ao acompanhamento depois que ela sai.</p>
+    <div class="grade">
+      <div class="card"><div class="ic">📄</div><h3>Licenciamento ambiental</h3><p>Licença Prévia, de Instalação e de Operação, e a renovação das licenças dentro do prazo.</p></div>
+      <div class="card"><div class="ic">📅</div><h3>Condicionantes ambientais</h3><p>Leitura da licença, calendário de prazos, relatórios e protocolo de cada entrega no órgão.</p></div>
+      <div class="card"><div class="ic">🌿</div><h3>Gestão ambiental</h3><p>Organização da rotina ambiental da empresa, PGRS e controle de documentos.</p></div>
+      <div class="card"><div class="ic">💧</div><h3>Outorga de água</h3><p>Pedido de outorga de uso de recursos hídricos para poços, cacimbas e captações.</p></div>
+      <div class="card"><div class="ic">🏛️</div><h3>CTF/IBAMA</h3><p>Cadastro Técnico Federal, RAPP anual e certificado de regularidade em dia.</p></div>
+      <div class="card"><div class="ic">⚖️</div><h3>Defesa técnica</h3><p>Apoio técnico na defesa de autos de infração ambiental.</p></div>
+    </div>
+    <div class="nota"><b>Cada empreendimento tem suas particularidades.</b> Por isso, o trabalho começa pela compreensão da atividade e da necessidade de cada cliente.</div>
+  </div>
+</section>
+
+<section class="sinais">
+  <div class="wrap">
+    <span class="etiqueta">Atenção</span>
+    <h2>5 sinais de que sua empresa pode precisar de licença</h2>
+    <p class="lead">Muita empresa só descobre na hora da fiscalização. Veja se o seu negócio se encaixa em algum destes casos.</p>
+    <div class="grade">
+      <div class="sinal"><i>1</i><h3>Gera resíduos</h3><p>Óleo, embalagens de produtos químicos, sucata, resíduos de saúde ou grande volume de lixo.</p></div>
+      <div class="sinal"><i>2</i><h3>Gera efluentes</h3><p>Água de lavagem, de processo ou esgoto que não vai direto para a rede pública.</p></div>
+      <div class="sinal"><i>3</i><h3>Usa produtos perigosos</h3><p>Combustíveis, saneantes, agrotóxicos, tintas ou solventes armazenados no local.</p></div>
+      <div class="sinal"><i>4</i><h3>Usa água de poço</h3><p>A captação de água de poço ou cacimba também pode precisar de outorga.</p></div>
+      <div class="sinal"><i>5</i><h3>Vai abrir ou mudar</h3><p>Abertura, ampliação ou mudança de endereço ou de atividade pedem nova avaliação.</p></div>
+    </div>
+    <div class="rodape"><a class="btn zaplink" href="#">Pedir uma avaliação</a><span>Marcar um sinal não quer dizer que a empresa está irregular, mas vale uma avaliação técnica.</span></div>
+  </div>
+</section>
+
+<section class="passos" id="como-funciona">
+  <div class="wrap">
+    <span class="etiqueta">Como funciona</span>
+    <h2>Do primeiro contato à licença em dia</h2>
+    <p class="lead">Para começar, basta saber qual atividade a empresa exerce, onde ela fica e quais licenças ou documentos já possui.</p>
+    <div class="grade">
+      <div class="passo"><b>1</b><h3>Avaliação</h3><p>Entendemos a atividade, o porte e o local do empreendimento.</p></div>
+      <div class="passo"><b>2</b><h3>Documentos</h3><p>Organizamos os documentos e estudos que o órgão exige.</p></div>
+      <div class="passo"><b>3</b><h3>Processo</h3><p>Protocolamos e acompanhamos o processo até a emissão.</p></div>
+      <div class="passo"><b>4</b><h3>Acompanhamento</h3><p>Mantemos prazos e condicionantes em dia depois da licença.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contadores">
+  <div class="wrap">
+    <div class="caixa">
+      <div>
+        <span class="etiqueta">Para contadores</span>
+        <h2>Quando uma demanda ambiental pode surgir para o seu cliente?</h2>
+        <ul>
+          <li>Abertura ou alteração de empresa</li>
+          <li>Mudança de atividade ou ampliação</li>
+          <li>Licenças e cadastros que dependem do caso concreto</li>
+          <li>Dúvidas ambientais que aparecem na rotina contábil</li>
+        </ul>
+      </div>
+      <div class="chamada">
+        <p>É contador? Envie <b>“PARCERIA”</b> e conheça como podemos atender os seus clientes.</p>
+        <a class="btn zaplink" data-msg="Olá! Sou contador(a) e quero saber sobre a PARCERIA com a PA Consultoria Ambiental." href="#">Quero ser parceiro</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="duvidas" id="duvidas">
+  <div class="wrap">
+    <span class="etiqueta">Dúvidas frequentes</span>
+    <h2>Perguntas que a gente mais recebe</h2>
+    <p class="lead">Respostas gerais. Cada caso depende da atividade e do órgão competente.</p>
+    <details><summary>Qual a diferença entre LP, LI e LO?</summary><p>A <b>Licença Prévia</b> aprova a localização e a concepção do empreendimento. A <b>Licença de Instalação</b> autoriza a obra. A <b>Licença de Operação</b> autoriza o funcionamento. Dependendo da atividade, elas podem ser concedidas juntas ou em procedimento simplificado.<br><span class="fonte">Resolução CONAMA nº 237/1997, arts. 8º e 12.</span></p></details>
+    <details><summary>Quando devo pedir a renovação da licença?</summary><p>A renovação da Licença de Operação deve ser pedida com antecedência mínima de <b>120 dias</b> do vencimento. Pedindo no prazo, a licença continua válida até a resposta do órgão.<br><span class="fonte">Resolução CONAMA nº 237/1997, art. 18, § 4º.</span></p></details>
+    <details><summary>O que são condicionantes?</summary><p>São obrigações escritas na própria licença, como relatórios, análises e monitoramentos, que precisam ser cumpridas enquanto ela estiver em vigor. Deixar de cumprir pode levar a multa, suspensão ou cancelamento da licença.<br><span class="fonte">Resolução CONAMA nº 237/1997, art. 19.</span></p></details>
+    <details><summary>Quem emite a licença em Alagoas: município, IMA ou IBAMA?</summary><p>Depende do tipo de atividade, do porte, do potencial de poluição e do local. Atividades de impacto local podem ser licenciadas pelo município; a maior parte das demais fica com o IMA/AL; e alguns casos específicos, com o IBAMA.<br><span class="fonte">Lei Complementar nº 140/2011.</span></p></details>
+    <details><summary>Minha empresa precisa de CTF/IBAMA?</summary><p>O Cadastro Técnico Federal é obrigatório para atividades potencialmente poluidoras ou que usam recursos naturais. Quem tem o cadastro precisa entregar o RAPP até 31 de março de cada ano.<br><span class="fonte">Lei nº 6.938/1981, art. 17.</span></p></details>
+    <details><summary>Minha empresa já funciona sem licença. E agora?</summary><p>É possível se regularizar. O primeiro passo é uma avaliação técnica da atividade para saber qual licença é necessária e em qual órgão o processo deve ser aberto.</p></details>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap">
+    <span class="etiqueta">Contato</span>
+    <h2>Fale com a PA</h2>
+    <p class="lead" style="color:#efe6c8">Conte qual é a atividade da sua empresa e a gente indica o caminho.</p>
+    <div class="cols">
+      <div class="info">
+        <div class="item"><div class="ic">💬</div><div><b>WhatsApp</b><a class="zaplink" href="#">(82) 99315-6912</a></div></div>
+        <div class="item"><div class="ic">📍</div><div><b>Endereço</b>R. Florêncio Apolinário, 173 – Alto do Cruzeiro<br>Arapiraca/AL<br><a href="https://www.google.com/maps/search/?api=1&query=R.+Flor%C3%AAncio+Apolin%C3%A1rio%2C+173+Alto+do+Cruzeiro+Arapiraca+AL" target="_blank" rel="noopener">Abrir no mapa →</a></div></div>
+        <div class="item"><div class="ic">🗺️</div><div><b>Área de atendimento</b>Empresas e empreendimentos em todo o estado de Alagoas</div></div>
+        <a class="btn zaplink" href="#" style="justify-self:start">Chamar no WhatsApp agora</a>
+      </div>
+      <div class="mapa"><iframe title="Mapa do endereço da PA Consultoria Ambiental" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=R.%20Flor%C3%AAncio%20Apolin%C3%A1rio%2C%20173%2C%20Alto%20do%20Cruzeiro%2C%20Arapiraca%20-%20AL&z=16&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano"></span> PA Consultoria Ambiental e de Segurança do Trabalho · Arapiraca/AL</span>
+    <span>Responsável técnica: Patricia Bezerra Albuquerque</span>
+  </div>
+</footer>
+
+<a class="zap zaplink" href="#" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg></a>
+
+<script>
+  const NUMERO = "5582993156912";
+  const PADRAO = "Olá! Vim pelo site da PA Consultoria Ambiental e gostaria de uma orientação.";
+  document.querySelectorAll(".zaplink").forEach(a => {
+    a.href = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(a.dataset.msg || PADRAO);
+    a.target = "_blank"; a.rel = "noopener";
+  });
+  document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
